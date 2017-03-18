@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SBLoader/SBLoader.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MessageBalloon/message balloon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CALayers-04/../ImageLoaderIndicator/ImageLoaderIndicator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CALayers-04/RWBooks.xcodeproj">
+   </FileRef>
+</Workspace>
