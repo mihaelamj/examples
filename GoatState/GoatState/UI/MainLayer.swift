@@ -1,5 +1,5 @@
 //
-//  GoatLayer.swift
+//  MainLayer.swift
 //  GoatState
 //
 //  Created by Mihaela Mihaljevic Jakic on 22/03/2017.
@@ -10,7 +10,7 @@ import UIKit
 
 func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
-class GoatLayer :  CAShapeLayer {
+class MainLayer :  CAShapeLayer {
     
     //MARK: -
     //MARK: Properties -

@@ -5,6 +5,9 @@
       location = "group:GoatState/GoatState.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:CALayers-04/RWBooks.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SBLoader/SBLoader.xcodeproj">
    </FileRef>
    <FileRef
@@ -12,8 +15,5 @@
    </FileRef>
    <FileRef
       location = "group:CALayers-04/../ImageLoaderIndicator/ImageLoaderIndicator.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CALayers-04/RWBooks.xcodeproj">
    </FileRef>
 </Workspace>

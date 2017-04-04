@@ -12,9 +12,8 @@
 		A95A0A1A1E82BCDA0077A978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95A0A181E82BCDA0077A978 /* Main.storyboard */; };
 		A95A0A1C1E82BCDA0077A978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95A0A1B1E82BCDA0077A978 /* Assets.xcassets */; };
 		A95A0A1F1E82BCDA0077A978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95A0A1D1E82BCDA0077A978 /* LaunchScreen.storyboard */; };
-		A95A0A271E82BD9C0077A978 /* GoatCrown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A261E82BD9C0077A978 /* GoatCrown.swift */; };
-		A95A0A2A1E82BEE30077A978 /* GoatLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A291E82BEE30077A978 /* GoatLayer.swift */; };
-		A95A0A2C1E82C1BE0077A978 /* ShapeLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A2B1E82C1BE0077A978 /* ShapeLayers.swift */; };
+		A95A0A271E82BD9C0077A978 /* GoatCrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */; };
+		A95A0A2A1E82BEE30077A978 /* MainLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A291E82BEE30077A978 /* MainLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +24,8 @@
 		A95A0A1B1E82BCDA0077A978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A95A0A1E1E82BCDA0077A978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A95A0A201E82BCDA0077A978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A95A0A261E82BD9C0077A978 /* GoatCrown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatCrown.swift; path = GoatState/UI/GoatCrown.swift; sourceTree = "<group>"; };
-		A95A0A291E82BEE30077A978 /* GoatLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatLayer.swift; path = GoatState/UI/GoatLayer.swift; sourceTree = "<group>"; };
-		A95A0A2B1E82C1BE0077A978 /* ShapeLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShapeLayers.swift; path = GoatState/UI/ShapeLayers.swift; sourceTree = "<group>"; };
+		A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatCrownView.swift; path = GoatState/UI/GoatCrownView.swift; sourceTree = "<group>"; };
+		A95A0A291E82BEE30077A978 /* MainLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainLayer.swift; path = GoatState/UI/MainLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +72,8 @@
 		A95A0A281E82BDA20077A978 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A95A0A261E82BD9C0077A978 /* GoatCrown.swift */,
-				A95A0A291E82BEE30077A978 /* GoatLayer.swift */,
-				A95A0A2B1E82C1BE0077A978 /* ShapeLayers.swift */,
+				A95A0A291E82BEE30077A978 /* MainLayer.swift */,
+				A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */,
 			);
 			name = UI;
 			path = ..;
@@ -157,9 +154,8 @@
 			files = (
 				A95A0A171E82BCDA0077A978 /* ViewController.swift in Sources */,
 				A95A0A151E82BCDA0077A978 /* AppDelegate.swift in Sources */,
-				A95A0A2C1E82C1BE0077A978 /* ShapeLayers.swift in Sources */,
-				A95A0A2A1E82BEE30077A978 /* GoatLayer.swift in Sources */,
-				A95A0A271E82BD9C0077A978 /* GoatCrown.swift in Sources */,
+				A95A0A2A1E82BEE30077A978 /* MainLayer.swift in Sources */,
+				A95A0A271E82BD9C0077A978 /* GoatCrownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
