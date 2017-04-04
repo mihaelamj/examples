@@ -40,6 +40,13 @@
 			remoteGlobalIDString = 121A0ECA1A4FFE1700E07EC5;
 			remoteInfo = ImageLoaderIndicator;
 		};
+		A95A0A061E82BC8C0077A978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95A0A021E82BC8C0077A978 /* GoatState.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A95A09E71E82BC550077A978;
+			remoteInfo = GoatState;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +106,7 @@
 		129077B51A73F134006516E0 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		129077B61A73F134006516E0 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		790CC2191A93DDF600FC660D /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		A95A0A021E82BC8C0077A978 /* GoatState.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GoatState.xcodeproj; path = "/Users/mmj/Developer/me/examples/CALayers-04/../GoatState/GoatState.xcodeproj"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 		121A0EC21A4FFE1700E07EC5 = {
 			isa = PBXGroup;
 			children = (
+				A95A0A021E82BC8C0077A978 /* GoatState.xcodeproj */,
 				129077631A73EBE0006516E0 /* ImageIO.framework */,
 				121A0ECD1A4FFE1700E07EC5 /* ImageLoaderIndicator */,
 				121A0EE31A4FFE1700E07EC5 /* ImageLoaderIndicatorTests */,
@@ -217,6 +226,14 @@
 			name = SDWebImage;
 			sourceTree = "<group>";
 		};
+		A95A0A031E82BC8C0077A978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A95A0A071E82BC8C0077A978 /* GoatState.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +304,12 @@
 			mainGroup = 121A0EC21A4FFE1700E07EC5;
 			productRefGroup = 121A0ECC1A4FFE1700E07EC5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A95A0A031E82BC8C0077A978 /* Products */;
+					ProjectRef = A95A0A021E82BC8C0077A978 /* GoatState.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				121A0ECA1A4FFE1700E07EC5 /* ImageLoaderIndicator */,
@@ -294,6 +317,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A95A0A071E82BC8C0077A978 /* GoatState.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GoatState.app;
+			remoteRef = A95A0A061E82BC8C0077A978 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		121A0EC91A4FFE1700E07EC5 /* Resources */ = {

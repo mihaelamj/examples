@@ -37,11 +37,11 @@ class StatView: UIView {
   let margin: CGFloat = 10
   
   let bgLayer = CAShapeLayer()
-  @IBInspectable var bgColor: UIColor = UIColor.gray {
-    didSet {
-      configure()
+    @IBInspectable var bgColor: UIColor = UIColor.gray {
+        didSet {
+            configure()
+        }
     }
-  }
   let fgLayer = CAShapeLayer()
   @IBInspectable var fgColor: UIColor = UIColor.black {
     didSet {

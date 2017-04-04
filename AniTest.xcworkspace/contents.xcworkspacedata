@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GoatState/GoatState.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SBLoader/SBLoader.xcodeproj">
    </FileRef>
    <FileRef
