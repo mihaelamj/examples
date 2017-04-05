@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, HolderViewDelegate {
   
+    @IBOutlet weak var goatView: GoatProgressView!
+    @IBOutlet weak var goatProgressView: GoatProgressView!
   var holderView = HolderView(frame: CGRect.zero)
   
   override func viewDidLoad() {

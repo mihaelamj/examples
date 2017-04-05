@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goat: GoatProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        goat.animateFromBottomAnimation(percentHeight: 0.5)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

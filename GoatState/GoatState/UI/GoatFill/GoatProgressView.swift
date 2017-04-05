@@ -123,6 +123,37 @@ class GoatProgressView: UIView, CAAnimationDelegate {
 		
 		CATransaction.commit()
 	}
+    
+    //MARK: New Animation -
+    
+    func animateFromBottomAnimation(percentHeight: CGFloat = 1.0, percentWidth: CGFloat = 1.0) {
+        
+        self.layer.speed = 1
+        self.animationAdded = false
+        
+        let fillMode : String = kCAFillModeForwards
+        
+        let fill = layers["fill"] as! CALayer
+        
+        let minWidth = 0
+        let maxWidth = 1.02846 * fill.superlayer!.bounds.width      //100%
+        let minHeight = 0
+        let maxHeight = 2.11111 * fill.superlayer!.bounds.height * percentHeight
+        
+        ////Fill animation
+        let fillBoundsAnim            = CAKeyframeAnimation(keyPath:"bounds")
+        
+        fillBoundsAnim.values         = [NSValue(cgRect: CGRect(x: 0, y: 0, width: Int(maxWidth), height: minHeight)),
+                                         NSValue(cgRect: CGRect(x: 0, y: 0, width: maxWidth * percentWidth, height: maxHeight * percentHeight))]
+        
+        //fillBoundsAnim.values         = [NSValue(cgRect: CGRect(x: 0, y: 0, width: 93, height: 0)), NSValue(cgRect: CGRect(x: 0, y: 0, width: 93, height: 190))]
+        fillBoundsAnim.keyTimes       = [0, 1]
+        fillBoundsAnim.duration       = 10
+        fillBoundsAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        
+        let fillFillFromBottomAnim : CAAnimationGroup = QCMethod.group(animations: [fillBoundsAnim], fillMode:fillMode)
+        fill.add(fillFillFromBottomAnim, forKey:"fillFillFromBottomAnim")
+    }
 	
 	//MARK: - Animation Setup
 	
@@ -160,7 +191,7 @@ class GoatProgressView: UIView, CAAnimationDelegate {
         
         //fillBoundsAnim.values         = [NSValue(cgRect: CGRect(x: 0, y: 0, width: 93, height: 0)), NSValue(cgRect: CGRect(x: 0, y: 0, width: 93, height: 190))]
 		fillBoundsAnim.keyTimes       = [0, 1]
-		fillBoundsAnim.duration       = 1
+		fillBoundsAnim.duration       = 10
 		fillBoundsAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
 		
 		let fillFillFromBottomAnim : CAAnimationGroup = QCMethod.group(animations: [fillBoundsAnim], fillMode:fillMode)
