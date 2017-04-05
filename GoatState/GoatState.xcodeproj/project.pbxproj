@@ -14,6 +14,10 @@
 		A95A0A1F1E82BCDA0077A978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95A0A1D1E82BCDA0077A978 /* LaunchScreen.storyboard */; };
 		A95A0A271E82BD9C0077A978 /* GoatCrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */; };
 		A95A0A2A1E82BEE30077A978 /* MainLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0A291E82BEE30077A978 /* MainLayer.swift */; };
+		A9FE31C71E93D8520084DEF5 /* VoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE31C61E93D8520084DEF5 /* VoteView.swift */; };
+		A9FE31CC1E952AA70084DEF5 /* GoatFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE31CA1E952AA70084DEF5 /* GoatFillView.swift */; };
+		A9FE31CD1E952AA70084DEF5 /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE31CB1E952AA70084DEF5 /* QCMethod.swift */; };
+		A9FE31D01E9549000084DEF5 /* GoatProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE31CF1E9549000084DEF5 /* GoatProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A95A0A201E82BCDA0077A978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatCrownView.swift; path = GoatState/UI/GoatCrownView.swift; sourceTree = "<group>"; };
 		A95A0A291E82BEE30077A978 /* MainLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainLayer.swift; path = GoatState/UI/MainLayer.swift; sourceTree = "<group>"; };
+		A9FE31C61E93D8520084DEF5 /* VoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoteView.swift; path = GoatState/UI/VoteView.swift; sourceTree = "<group>"; };
+		A9FE31CA1E952AA70084DEF5 /* GoatFillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatFillView.swift; path = GoatState/UI/GoatFill/GoatFillView.swift; sourceTree = "<group>"; };
+		A9FE31CB1E952AA70084DEF5 /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QCMethod.swift; path = GoatState/UI/GoatFill/QCMethod.swift; sourceTree = "<group>"; };
+		A9FE31CF1E9549000084DEF5 /* GoatProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoatProgressView.swift; path = GoatState/UI/GoatFill/GoatProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +80,23 @@
 		A95A0A281E82BDA20077A978 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A9FE31CE1E952AAF0084DEF5 /* GoatFill */,
 				A95A0A291E82BEE30077A978 /* MainLayer.swift */,
+				A9FE31C61E93D8520084DEF5 /* VoteView.swift */,
 				A95A0A261E82BD9C0077A978 /* GoatCrownView.swift */,
 			);
 			name = UI;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A9FE31CE1E952AAF0084DEF5 /* GoatFill */ = {
+			isa = PBXGroup;
+			children = (
+				A9FE31CF1E9549000084DEF5 /* GoatProgressView.swift */,
+				A9FE31CA1E952AA70084DEF5 /* GoatFillView.swift */,
+				A9FE31CB1E952AA70084DEF5 /* QCMethod.swift */,
+			);
+			name = GoatFill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +175,10 @@
 				A95A0A171E82BCDA0077A978 /* ViewController.swift in Sources */,
 				A95A0A151E82BCDA0077A978 /* AppDelegate.swift in Sources */,
 				A95A0A2A1E82BEE30077A978 /* MainLayer.swift in Sources */,
+				A9FE31CC1E952AA70084DEF5 /* GoatFillView.swift in Sources */,
+				A9FE31D01E9549000084DEF5 /* GoatProgressView.swift in Sources */,
+				A9FE31C71E93D8520084DEF5 /* VoteView.swift in Sources */,
+				A9FE31CD1E952AA70084DEF5 /* QCMethod.swift in Sources */,
 				A95A0A271E82BD9C0077A978 /* GoatCrownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

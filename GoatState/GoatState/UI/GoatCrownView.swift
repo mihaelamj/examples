@@ -17,10 +17,18 @@ class GoatCrownView: UIView {
     let goatLayer = CAShapeLayer()
     let crownLayer = CAShapeLayer()
     
+    let goatGradientLayer = CAGradientLayer()
+    
     //MARK: -
     //MARK: Public Properties -
     
-    @IBInspectable var goatColor: UIColor = UIColor.gray {
+    @IBInspectable var goatColor: UIColor = UIColor.blue {
+        didSet {
+            configure()
+        }
+    }
+    
+    @IBInspectable var goatEndColor: UIColor = UIColor.blue {
         didSet {
             configure()
         }
@@ -64,8 +72,15 @@ class GoatCrownView: UIView {
     }
     
     private func configure() {
+        
+        //old configure
         goatLayer.fillColor = goatColor.cgColor
         crownLayer.fillColor = crownColor.cgColor
+        
+        //configure gradient
+        goatGradientLayer.colors = [goatColor.cgColor, goatEndColor.cgColor]
+        goatGradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+        goatGradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
     }
     
     func fastFloor(_ x: CGFloat) -> CGFloat {
