@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49A4D85C1CF7A59100F8DCED /* MTSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8591CF7A59100F8DCED /* MTSymbol.m */; };
+		49A4D85D1CF7A59100F8DCED /* MTTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D85B1CF7A59100F8DCED /* MTTokenizer.m */; };
+		49A4D8801CF7A70A00F8DCED /* TokenizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D85F1CF7A70A00F8DCED /* TokenizerTest.m */; };
+		49A4D8811CF7A70A00F8DCED /* CalculateRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8631CF7A70A00F8DCED /* CalculateRuleTest.m */; };
+		49A4D8821CF7A70A00F8DCED /* CancelCommonFactorsRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8641CF7A70A00F8DCED /* CancelCommonFactorsRuleTest.m */; };
+		49A4D8831CF7A70A00F8DCED /* CanonicalizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8661CF7A70A00F8DCED /* CanonicalizerTest.m */; };
+		49A4D8841CF7A70A00F8DCED /* CollectLikeTermsRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8681CF7A70A00F8DCED /* CollectLikeTermsRuleTest.m */; };
+		49A4D8851CF7A70A00F8DCED /* DistributionRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D86A1CF7A70A00F8DCED /* DistributionRuleTest.m */; };
+		49A4D8861CF7A70A00F8DCED /* DivisionIdentityRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D86B1CF7A70A00F8DCED /* DivisionIdentityRuleTest.m */; };
+		49A4D8871CF7A70A00F8DCED /* FlattenRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D86D1CF7A70A00F8DCED /* FlattenRuleTest.m */; };
+		49A4D8881CF7A70A00F8DCED /* IdentityRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D86F1CF7A70A00F8DCED /* IdentityRuleTest.m */; };
+		49A4D8891CF7A70A00F8DCED /* NestedDivisionRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8701CF7A70A00F8DCED /* NestedDivisionRuleTest.m */; };
+		49A4D88A1CF7A70A00F8DCED /* NullRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8711CF7A70A00F8DCED /* NullRuleTest.m */; };
+		49A4D88B1CF7A70A00F8DCED /* RationalAdditionRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8721CF7A70A00F8DCED /* RationalAdditionRuleTest.m */; };
+		49A4D88C1CF7A70A00F8DCED /* RationalMultiplicationRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8731CF7A70A00F8DCED /* RationalMultiplicationRuleTest.m */; };
+		49A4D88D1CF7A70A00F8DCED /* RemoveNegativesRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8751CF7A70A00F8DCED /* RemoveNegativesRuleTest.m */; };
+		49A4D88E1CF7A70A00F8DCED /* ReorderTermsRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8771CF7A70A00F8DCED /* ReorderTermsRuleTest.m */; };
+		49A4D88F1CF7A70A00F8DCED /* ZeroRuleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D8791CF7A70A00F8DCED /* ZeroRuleTest.m */; };
+		49A4D8901CF7A70A00F8DCED /* RationalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D87A1CF7A70A00F8DCED /* RationalTest.m */; };
+		49A4D8911CF7A70A00F8DCED /* InfixParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D87B1CF7A70A00F8DCED /* InfixParserTest.m */; };
+		49A4D8921CF7A70A00F8DCED /* ExpressionUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D87D1CF7A70A00F8DCED /* ExpressionUtilTest.m */; };
+		49A4D8931CF7A70A00F8DCED /* ExpressionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4D87F1CF7A70A00F8DCED /* ExpressionTest.m */; };
+		49DEC85C1CF7755F000053CD /* MathSolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC85B1CF7755F000053CD /* MathSolverTests.m */; };
+		49DEC89B1CF77A16000053CD /* MTExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8661CF77A16000053CD /* MTExpression.m */; };
+		49DEC89C1CF77A16000053CD /* MTExpressionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8681CF77A16000053CD /* MTExpressionUtil.m */; };
+		49DEC89D1CF77A16000053CD /* MTInfixParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC86A1CF77A16000053CD /* MTInfixParser.m */; };
+		49DEC89E1CF77A16000053CD /* MTRational.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC86C1CF77A16000053CD /* MTRational.m */; };
+		49DEC8A11CF77A16000053CD /* MTCanonicalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8731CF77A16000053CD /* MTCanonicalizer.m */; };
+		49DEC8A21CF77A16000053CD /* MTExpressionAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8751CF77A16000053CD /* MTExpressionAnalysis.m */; };
+		49DEC8A31CF77A16000053CD /* MTExpressionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8771CF77A16000053CD /* MTExpressionInfo.m */; };
+		49DEC8A41CF77A16000053CD /* MTCalculateRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC87A1CF77A16000053CD /* MTCalculateRule.m */; };
+		49DEC8A51CF77A16000053CD /* MTCancelCommonFactorsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC87C1CF77A16000053CD /* MTCancelCommonFactorsRule.m */; };
+		49DEC8A61CF77A16000053CD /* MTCollectLikeTermsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC87E1CF77A16000053CD /* MTCollectLikeTermsRule.m */; };
+		49DEC8A71CF77A16000053CD /* MTDecimalReduceRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8801CF77A16000053CD /* MTDecimalReduceRule.m */; };
+		49DEC8A81CF77A16000053CD /* MTDistributionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8821CF77A16000053CD /* MTDistributionRule.m */; };
+		49DEC8A91CF77A16000053CD /* MTDivisionIdentityRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8841CF77A16000053CD /* MTDivisionIdentityRule.m */; };
+		49DEC8AA1CF77A16000053CD /* MTFlattenRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8861CF77A16000053CD /* MTFlattenRule.m */; };
+		49DEC8AB1CF77A16000053CD /* MTIdentityRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8881CF77A16000053CD /* MTIdentityRule.m */; };
+		49DEC8AC1CF77A16000053CD /* MTNestedDivisionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC88A1CF77A16000053CD /* MTNestedDivisionRule.m */; };
+		49DEC8AD1CF77A16000053CD /* MTNullRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC88C1CF77A16000053CD /* MTNullRule.m */; };
+		49DEC8AE1CF77A16000053CD /* MTRationalAdditionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC88E1CF77A16000053CD /* MTRationalAdditionRule.m */; };
+		49DEC8AF1CF77A16000053CD /* MTRationalMultiplicationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8901CF77A16000053CD /* MTRationalMultiplicationRule.m */; };
+		49DEC8B01CF77A16000053CD /* MTReduceRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8921CF77A16000053CD /* MTReduceRule.m */; };
+		49DEC8B11CF77A16000053CD /* MTRemoveNegativesRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8941CF77A16000053CD /* MTRemoveNegativesRule.m */; };
+		49DEC8B21CF77A16000053CD /* MTReorderTermsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8961CF77A16000053CD /* MTReorderTermsRule.m */; };
+		49DEC8B31CF77A16000053CD /* MTRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8981CF77A16000053CD /* MTRule.m */; };
+		49DEC8B41CF77A16000053CD /* MTZeroRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC89A1CF77A16000053CD /* MTZeroRule.m */; };
+		55133F3EAF772711CF3339D6 /* libPods-MathSolverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8939A39D93544AACC5656B /* libPods-MathSolverTests.a */; };
+		9E57590E7A6BE63D9E65CD08 /* libPods-MathSolver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 266296E3290467065E771528 /* libPods-MathSolver.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49DEC8471CF774E4000053CD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		266296E3290467065E771528 /* libPods-MathSolver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathSolver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A4D8581CF7A59100F8DCED /* MTSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSymbol.h; sourceTree = "<group>"; };
+		49A4D8591CF7A59100F8DCED /* MTSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSymbol.m; sourceTree = "<group>"; };
+		49A4D85A1CF7A59100F8DCED /* MTTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTokenizer.h; sourceTree = "<group>"; };
+		49A4D85B1CF7A59100F8DCED /* MTTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTokenizer.m; sourceTree = "<group>"; };
+		49A4D85F1CF7A70A00F8DCED /* TokenizerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenizerTest.m; sourceTree = "<group>"; };
+		49A4D8601CF7A70A00F8DCED /* TokenizerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenizerTest.h; sourceTree = "<group>"; };
+		49A4D8621CF7A70A00F8DCED /* CalculateRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateRuleTest.h; sourceTree = "<group>"; };
+		49A4D8631CF7A70A00F8DCED /* CalculateRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateRuleTest.m; sourceTree = "<group>"; };
+		49A4D8641CF7A70A00F8DCED /* CancelCommonFactorsRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelCommonFactorsRuleTest.m; sourceTree = "<group>"; };
+		49A4D8651CF7A70A00F8DCED /* CanonicalizerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanonicalizerTest.h; sourceTree = "<group>"; };
+		49A4D8661CF7A70A00F8DCED /* CanonicalizerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanonicalizerTest.m; sourceTree = "<group>"; };
+		49A4D8671CF7A70A00F8DCED /* CollectLikeTermsRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectLikeTermsRuleTest.h; sourceTree = "<group>"; };
+		49A4D8681CF7A70A00F8DCED /* CollectLikeTermsRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectLikeTermsRuleTest.m; sourceTree = "<group>"; };
+		49A4D8691CF7A70A00F8DCED /* DistributionRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionRuleTest.h; sourceTree = "<group>"; };
+		49A4D86A1CF7A70A00F8DCED /* DistributionRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionRuleTest.m; sourceTree = "<group>"; };
+		49A4D86B1CF7A70A00F8DCED /* DivisionIdentityRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionIdentityRuleTest.m; sourceTree = "<group>"; };
+		49A4D86C1CF7A70A00F8DCED /* FlattenRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlattenRuleTest.h; sourceTree = "<group>"; };
+		49A4D86D1CF7A70A00F8DCED /* FlattenRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlattenRuleTest.m; sourceTree = "<group>"; };
+		49A4D86E1CF7A70A00F8DCED /* IdentityRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentityRuleTest.h; sourceTree = "<group>"; };
+		49A4D86F1CF7A70A00F8DCED /* IdentityRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentityRuleTest.m; sourceTree = "<group>"; };
+		49A4D8701CF7A70A00F8DCED /* NestedDivisionRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedDivisionRuleTest.m; sourceTree = "<group>"; };
+		49A4D8711CF7A70A00F8DCED /* NullRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullRuleTest.m; sourceTree = "<group>"; };
+		49A4D8721CF7A70A00F8DCED /* RationalAdditionRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalAdditionRuleTest.m; sourceTree = "<group>"; };
+		49A4D8731CF7A70A00F8DCED /* RationalMultiplicationRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalMultiplicationRuleTest.m; sourceTree = "<group>"; };
+		49A4D8741CF7A70A00F8DCED /* RemoveNegativesRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveNegativesRuleTest.h; sourceTree = "<group>"; };
+		49A4D8751CF7A70A00F8DCED /* RemoveNegativesRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveNegativesRuleTest.m; sourceTree = "<group>"; };
+		49A4D8761CF7A70A00F8DCED /* ReorderTermsRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReorderTermsRuleTest.h; sourceTree = "<group>"; };
+		49A4D8771CF7A70A00F8DCED /* ReorderTermsRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReorderTermsRuleTest.m; sourceTree = "<group>"; };
+		49A4D8781CF7A70A00F8DCED /* ZeroRuleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroRuleTest.h; sourceTree = "<group>"; };
+		49A4D8791CF7A70A00F8DCED /* ZeroRuleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroRuleTest.m; sourceTree = "<group>"; };
+		49A4D87A1CF7A70A00F8DCED /* RationalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalTest.m; sourceTree = "<group>"; };
+		49A4D87B1CF7A70A00F8DCED /* InfixParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfixParserTest.m; sourceTree = "<group>"; };
+		49A4D87C1CF7A70A00F8DCED /* InfixParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfixParserTest.h; sourceTree = "<group>"; };
+		49A4D87D1CF7A70A00F8DCED /* ExpressionUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionUtilTest.m; sourceTree = "<group>"; };
+		49A4D87E1CF7A70A00F8DCED /* ExpressionUtilTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionUtilTest.h; sourceTree = "<group>"; };
+		49A4D87F1CF7A70A00F8DCED /* ExpressionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionTest.m; sourceTree = "<group>"; };
+		49DEC8491CF774E4000053CD /* libMathSolver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMathSolver.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DEC8591CF7755F000053CD /* MathSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DEC85B1CF7755F000053CD /* MathSolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathSolverTests.m; sourceTree = "<group>"; };
+		49DEC85D1CF7755F000053CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DEC8651CF77A16000053CD /* MTExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpression.h; sourceTree = "<group>"; };
+		49DEC8661CF77A16000053CD /* MTExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpression.m; sourceTree = "<group>"; };
+		49DEC8671CF77A16000053CD /* MTExpressionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpressionUtil.h; sourceTree = "<group>"; };
+		49DEC8681CF77A16000053CD /* MTExpressionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpressionUtil.m; sourceTree = "<group>"; };
+		49DEC8691CF77A16000053CD /* MTInfixParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTInfixParser.h; sourceTree = "<group>"; };
+		49DEC86A1CF77A16000053CD /* MTInfixParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTInfixParser.m; sourceTree = "<group>"; };
+		49DEC86B1CF77A16000053CD /* MTRational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRational.h; sourceTree = "<group>"; };
+		49DEC86C1CF77A16000053CD /* MTRational.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRational.m; sourceTree = "<group>"; };
+		49DEC8721CF77A16000053CD /* MTCanonicalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCanonicalizer.h; sourceTree = "<group>"; };
+		49DEC8731CF77A16000053CD /* MTCanonicalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCanonicalizer.m; sourceTree = "<group>"; };
+		49DEC8741CF77A16000053CD /* MTExpressionAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpressionAnalysis.h; sourceTree = "<group>"; };
+		49DEC8751CF77A16000053CD /* MTExpressionAnalysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpressionAnalysis.m; sourceTree = "<group>"; };
+		49DEC8761CF77A16000053CD /* MTExpressionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpressionInfo.h; sourceTree = "<group>"; };
+		49DEC8771CF77A16000053CD /* MTExpressionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpressionInfo.m; sourceTree = "<group>"; };
+		49DEC8791CF77A16000053CD /* MTCalculateRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCalculateRule.h; sourceTree = "<group>"; };
+		49DEC87A1CF77A16000053CD /* MTCalculateRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCalculateRule.m; sourceTree = "<group>"; };
+		49DEC87B1CF77A16000053CD /* MTCancelCommonFactorsRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCancelCommonFactorsRule.h; sourceTree = "<group>"; };
+		49DEC87C1CF77A16000053CD /* MTCancelCommonFactorsRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCancelCommonFactorsRule.m; sourceTree = "<group>"; };
+		49DEC87D1CF77A16000053CD /* MTCollectLikeTermsRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCollectLikeTermsRule.h; sourceTree = "<group>"; };
+		49DEC87E1CF77A16000053CD /* MTCollectLikeTermsRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCollectLikeTermsRule.m; sourceTree = "<group>"; };
+		49DEC87F1CF77A16000053CD /* MTDecimalReduceRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDecimalReduceRule.h; sourceTree = "<group>"; };
+		49DEC8801CF77A16000053CD /* MTDecimalReduceRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDecimalReduceRule.m; sourceTree = "<group>"; };
+		49DEC8811CF77A16000053CD /* MTDistributionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDistributionRule.h; sourceTree = "<group>"; };
+		49DEC8821CF77A16000053CD /* MTDistributionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDistributionRule.m; sourceTree = "<group>"; };
+		49DEC8831CF77A16000053CD /* MTDivisionIdentityRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDivisionIdentityRule.h; sourceTree = "<group>"; };
+		49DEC8841CF77A16000053CD /* MTDivisionIdentityRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDivisionIdentityRule.m; sourceTree = "<group>"; };
+		49DEC8851CF77A16000053CD /* MTFlattenRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFlattenRule.h; sourceTree = "<group>"; };
+		49DEC8861CF77A16000053CD /* MTFlattenRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFlattenRule.m; sourceTree = "<group>"; };
+		49DEC8871CF77A16000053CD /* MTIdentityRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTIdentityRule.h; sourceTree = "<group>"; };
+		49DEC8881CF77A16000053CD /* MTIdentityRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTIdentityRule.m; sourceTree = "<group>"; };
+		49DEC8891CF77A16000053CD /* MTNestedDivisionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNestedDivisionRule.h; sourceTree = "<group>"; };
+		49DEC88A1CF77A16000053CD /* MTNestedDivisionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNestedDivisionRule.m; sourceTree = "<group>"; };
+		49DEC88B1CF77A16000053CD /* MTNullRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNullRule.h; sourceTree = "<group>"; };
+		49DEC88C1CF77A16000053CD /* MTNullRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNullRule.m; sourceTree = "<group>"; };
+		49DEC88D1CF77A16000053CD /* MTRationalAdditionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRationalAdditionRule.h; sourceTree = "<group>"; };
+		49DEC88E1CF77A16000053CD /* MTRationalAdditionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRationalAdditionRule.m; sourceTree = "<group>"; };
+		49DEC88F1CF77A16000053CD /* MTRationalMultiplicationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRationalMultiplicationRule.h; sourceTree = "<group>"; };
+		49DEC8901CF77A16000053CD /* MTRationalMultiplicationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRationalMultiplicationRule.m; sourceTree = "<group>"; };
+		49DEC8911CF77A16000053CD /* MTReduceRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTReduceRule.h; sourceTree = "<group>"; };
+		49DEC8921CF77A16000053CD /* MTReduceRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTReduceRule.m; sourceTree = "<group>"; };
+		49DEC8931CF77A16000053CD /* MTRemoveNegativesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRemoveNegativesRule.h; sourceTree = "<group>"; };
+		49DEC8941CF77A16000053CD /* MTRemoveNegativesRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRemoveNegativesRule.m; sourceTree = "<group>"; };
+		49DEC8951CF77A16000053CD /* MTReorderTermsRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTReorderTermsRule.h; sourceTree = "<group>"; };
+		49DEC8961CF77A16000053CD /* MTReorderTermsRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTReorderTermsRule.m; sourceTree = "<group>"; };
+		49DEC8971CF77A16000053CD /* MTRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRule.h; sourceTree = "<group>"; };
+		49DEC8981CF77A16000053CD /* MTRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRule.m; sourceTree = "<group>"; };
+		49DEC8991CF77A16000053CD /* MTZeroRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZeroRule.h; sourceTree = "<group>"; };
+		49DEC89A1CF77A16000053CD /* MTZeroRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZeroRule.m; sourceTree = "<group>"; };
+		49DEC8B91CF78E86000053CD /* Log.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.pch; sourceTree = "<group>"; };
+		4F414D58011471A119E8C6F4 /* Pods-MathSolver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathSolver.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathSolver/Pods-MathSolver.release.xcconfig"; sourceTree = "<group>"; };
+		5D8939A39D93544AACC5656B /* libPods-MathSolverTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathSolverTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		971DFCE3D8E41A5446B5AC27 /* Pods-MathSolverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathSolverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBCAD9DE7EE9A47DF798161F /* Pods-MathSolverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathSolverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D06015C8F0F013669F5BE437 /* Pods-MathSolver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathSolver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathSolver/Pods-MathSolver.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49DEC8461CF774E4000053CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E57590E7A6BE63D9E65CD08 /* libPods-MathSolver.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49DEC8561CF7755F000053CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55133F3EAF772711CF3339D6 /* libPods-MathSolverTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A4D8571CF7A59100F8DCED /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				49A4D8581CF7A59100F8DCED /* MTSymbol.h */,
+				49A4D8591CF7A59100F8DCED /* MTSymbol.m */,
+				49A4D85A1CF7A59100F8DCED /* MTTokenizer.h */,
+				49A4D85B1CF7A59100F8DCED /* MTTokenizer.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		49A4D8611CF7A70A00F8DCED /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				49A4D8621CF7A70A00F8DCED /* CalculateRuleTest.h */,
+				49A4D8631CF7A70A00F8DCED /* CalculateRuleTest.m */,
+				49A4D8641CF7A70A00F8DCED /* CancelCommonFactorsRuleTest.m */,
+				49A4D8651CF7A70A00F8DCED /* CanonicalizerTest.h */,
+				49A4D8661CF7A70A00F8DCED /* CanonicalizerTest.m */,
+				49A4D8671CF7A70A00F8DCED /* CollectLikeTermsRuleTest.h */,
+				49A4D8681CF7A70A00F8DCED /* CollectLikeTermsRuleTest.m */,
+				49A4D8691CF7A70A00F8DCED /* DistributionRuleTest.h */,
+				49A4D86A1CF7A70A00F8DCED /* DistributionRuleTest.m */,
+				49A4D86B1CF7A70A00F8DCED /* DivisionIdentityRuleTest.m */,
+				49A4D86C1CF7A70A00F8DCED /* FlattenRuleTest.h */,
+				49A4D86D1CF7A70A00F8DCED /* FlattenRuleTest.m */,
+				49A4D86E1CF7A70A00F8DCED /* IdentityRuleTest.h */,
+				49A4D86F1CF7A70A00F8DCED /* IdentityRuleTest.m */,
+				49A4D8701CF7A70A00F8DCED /* NestedDivisionRuleTest.m */,
+				49A4D8711CF7A70A00F8DCED /* NullRuleTest.m */,
+				49A4D8721CF7A70A00F8DCED /* RationalAdditionRuleTest.m */,
+				49A4D8731CF7A70A00F8DCED /* RationalMultiplicationRuleTest.m */,
+				49A4D8741CF7A70A00F8DCED /* RemoveNegativesRuleTest.h */,
+				49A4D8751CF7A70A00F8DCED /* RemoveNegativesRuleTest.m */,
+				49A4D8761CF7A70A00F8DCED /* ReorderTermsRuleTest.h */,
+				49A4D8771CF7A70A00F8DCED /* ReorderTermsRuleTest.m */,
+				49A4D8781CF7A70A00F8DCED /* ZeroRuleTest.h */,
+				49A4D8791CF7A70A00F8DCED /* ZeroRuleTest.m */,
+			);
+			path = rules;
+			sourceTree = "<group>";
+		};
+		49DEC8401CF774E4000053CD = {
+			isa = PBXGroup;
+			children = (
+				49DEC8B91CF78E86000053CD /* Log.pch */,
+				49DEC84B1CF774E4000053CD /* MathSolver */,
+				49DEC85A1CF7755F000053CD /* MathSolverTests */,
+				49DEC84A1CF774E4000053CD /* Products */,
+				C4378298E677A46E05C2A302 /* Pods */,
+				A8335C1A6939571053B9CCB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49DEC84A1CF774E4000053CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8491CF774E4000053CD /* libMathSolver.a */,
+				49DEC8591CF7755F000053CD /* MathSolverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49DEC84B1CF774E4000053CD /* MathSolver */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8641CF77A16000053CD /* expressions */,
+				49DEC8711CF77A16000053CD /* analysis */,
+			);
+			path = MathSolver;
+			sourceTree = "<group>";
+		};
+		49DEC85A1CF7755F000053CD /* MathSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				49A4D85F1CF7A70A00F8DCED /* TokenizerTest.m */,
+				49A4D8601CF7A70A00F8DCED /* TokenizerTest.h */,
+				49A4D8611CF7A70A00F8DCED /* rules */,
+				49A4D87A1CF7A70A00F8DCED /* RationalTest.m */,
+				49A4D87B1CF7A70A00F8DCED /* InfixParserTest.m */,
+				49A4D87C1CF7A70A00F8DCED /* InfixParserTest.h */,
+				49A4D87D1CF7A70A00F8DCED /* ExpressionUtilTest.m */,
+				49A4D87E1CF7A70A00F8DCED /* ExpressionUtilTest.h */,
+				49A4D87F1CF7A70A00F8DCED /* ExpressionTest.m */,
+				49DEC85B1CF7755F000053CD /* MathSolverTests.m */,
+				49DEC85D1CF7755F000053CD /* Info.plist */,
+			);
+			path = MathSolverTests;
+			sourceTree = "<group>";
+		};
+		49DEC8641CF77A16000053CD /* expressions */ = {
+			isa = PBXGroup;
+			children = (
+				49A4D8571CF7A59100F8DCED /* internal */,
+				49DEC8651CF77A16000053CD /* MTExpression.h */,
+				49DEC8661CF77A16000053CD /* MTExpression.m */,
+				49DEC8671CF77A16000053CD /* MTExpressionUtil.h */,
+				49DEC8681CF77A16000053CD /* MTExpressionUtil.m */,
+				49DEC8691CF77A16000053CD /* MTInfixParser.h */,
+				49DEC86A1CF77A16000053CD /* MTInfixParser.m */,
+				49DEC86B1CF77A16000053CD /* MTRational.h */,
+				49DEC86C1CF77A16000053CD /* MTRational.m */,
+			);
+			path = expressions;
+			sourceTree = "<group>";
+		};
+		49DEC8711CF77A16000053CD /* analysis */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8721CF77A16000053CD /* MTCanonicalizer.h */,
+				49DEC8731CF77A16000053CD /* MTCanonicalizer.m */,
+				49DEC8741CF77A16000053CD /* MTExpressionAnalysis.h */,
+				49DEC8751CF77A16000053CD /* MTExpressionAnalysis.m */,
+				49DEC8761CF77A16000053CD /* MTExpressionInfo.h */,
+				49DEC8771CF77A16000053CD /* MTExpressionInfo.m */,
+				49DEC8781CF77A16000053CD /* rules */,
+			);
+			path = analysis;
+			sourceTree = "<group>";
+		};
+		49DEC8781CF77A16000053CD /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				49DEC8791CF77A16000053CD /* MTCalculateRule.h */,
+				49DEC87A1CF77A16000053CD /* MTCalculateRule.m */,
+				49DEC87B1CF77A16000053CD /* MTCancelCommonFactorsRule.h */,
+				49DEC87C1CF77A16000053CD /* MTCancelCommonFactorsRule.m */,
+				49DEC87D1CF77A16000053CD /* MTCollectLikeTermsRule.h */,
+				49DEC87E1CF77A16000053CD /* MTCollectLikeTermsRule.m */,
+				49DEC87F1CF77A16000053CD /* MTDecimalReduceRule.h */,
+				49DEC8801CF77A16000053CD /* MTDecimalReduceRule.m */,
+				49DEC8811CF77A16000053CD /* MTDistributionRule.h */,
+				49DEC8821CF77A16000053CD /* MTDistributionRule.m */,
+				49DEC8831CF77A16000053CD /* MTDivisionIdentityRule.h */,
+				49DEC8841CF77A16000053CD /* MTDivisionIdentityRule.m */,
+				49DEC8851CF77A16000053CD /* MTFlattenRule.h */,
+				49DEC8861CF77A16000053CD /* MTFlattenRule.m */,
+				49DEC8871CF77A16000053CD /* MTIdentityRule.h */,
+				49DEC8881CF77A16000053CD /* MTIdentityRule.m */,
+				49DEC8891CF77A16000053CD /* MTNestedDivisionRule.h */,
+				49DEC88A1CF77A16000053CD /* MTNestedDivisionRule.m */,
+				49DEC88B1CF77A16000053CD /* MTNullRule.h */,
+				49DEC88C1CF77A16000053CD /* MTNullRule.m */,
+				49DEC88D1CF77A16000053CD /* MTRationalAdditionRule.h */,
+				49DEC88E1CF77A16000053CD /* MTRationalAdditionRule.m */,
+				49DEC88F1CF77A16000053CD /* MTRationalMultiplicationRule.h */,
+				49DEC8901CF77A16000053CD /* MTRationalMultiplicationRule.m */,
+				49DEC8911CF77A16000053CD /* MTReduceRule.h */,
+				49DEC8921CF77A16000053CD /* MTReduceRule.m */,
+				49DEC8931CF77A16000053CD /* MTRemoveNegativesRule.h */,
+				49DEC8941CF77A16000053CD /* MTRemoveNegativesRule.m */,
+				49DEC8951CF77A16000053CD /* MTReorderTermsRule.h */,
+				49DEC8961CF77A16000053CD /* MTReorderTermsRule.m */,
+				49DEC8971CF77A16000053CD /* MTRule.h */,
+				49DEC8981CF77A16000053CD /* MTRule.m */,
+				49DEC8991CF77A16000053CD /* MTZeroRule.h */,
+				49DEC89A1CF77A16000053CD /* MTZeroRule.m */,
+			);
+			path = rules;
+			sourceTree = "<group>";
+		};
+		A8335C1A6939571053B9CCB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				266296E3290467065E771528 /* libPods-MathSolver.a */,
+				5D8939A39D93544AACC5656B /* libPods-MathSolverTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4378298E677A46E05C2A302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D06015C8F0F013669F5BE437 /* Pods-MathSolver.debug.xcconfig */,
+				4F414D58011471A119E8C6F4 /* Pods-MathSolver.release.xcconfig */,
+				CBCAD9DE7EE9A47DF798161F /* Pods-MathSolverTests.debug.xcconfig */,
+				971DFCE3D8E41A5446B5AC27 /* Pods-MathSolverTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49DEC8481CF774E4000053CD /* MathSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49DEC8521CF774E4000053CD /* Build configuration list for PBXNativeTarget "MathSolver" */;
+			buildPhases = (
+				BD75F2C68D453573DE52C10A /* 📦 Check Pods Manifest.lock */,
+				49DEC8451CF774E4000053CD /* Sources */,
+				49DEC8461CF774E4000053CD /* Frameworks */,
+				49DEC8471CF774E4000053CD /* CopyFiles */,
+				D9FA6961B85F35C5459A2D83 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathSolver;
+			productName = MathSolver;
+			productReference = 49DEC8491CF774E4000053CD /* libMathSolver.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		49DEC8581CF7755F000053CD /* MathSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49DEC8611CF7755F000053CD /* Build configuration list for PBXNativeTarget "MathSolverTests" */;
+			buildPhases = (
+				BDAF5AA85E8C7760FB36C492 /* 📦 Check Pods Manifest.lock */,
+				49DEC8551CF7755F000053CD /* Sources */,
+				49DEC8561CF7755F000053CD /* Frameworks */,
+				49DEC8571CF7755F000053CD /* Resources */,
+				7B820089F0A6CEB926CA0F50 /* 📦 Embed Pods Frameworks */,
+				EEDF3B3D383953AA408972FA /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathSolverTests;
+			productName = MathSolverTests;
+			productReference = 49DEC8591CF7755F000053CD /* MathSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49DEC8411CF774E4000053CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Kostub Deshmukh";
+				TargetAttributes = {
+					49DEC8481CF774E4000053CD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					49DEC8581CF7755F000053CD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 49DEC8441CF774E4000053CD /* Build configuration list for PBXProject "MathSolver" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49DEC8401CF774E4000053CD;
+			productRefGroup = 49DEC84A1CF774E4000053CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49DEC8481CF774E4000053CD /* MathSolver */,
+				49DEC8581CF7755F000053CD /* MathSolverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49DEC8571CF7755F000053CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B820089F0A6CEB926CA0F50 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD75F2C68D453573DE52C10A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAF5AA85E8C7760FB36C492 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FA6961B85F35C5459A2D83 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathSolver/Pods-MathSolver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEDF3B3D383953AA408972FA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49DEC8451CF774E4000053CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49DEC8A61CF77A16000053CD /* MTCollectLikeTermsRule.m in Sources */,
+				49DEC8A51CF77A16000053CD /* MTCancelCommonFactorsRule.m in Sources */,
+				49DEC8AC1CF77A16000053CD /* MTNestedDivisionRule.m in Sources */,
+				49DEC89B1CF77A16000053CD /* MTExpression.m in Sources */,
+				49DEC8A31CF77A16000053CD /* MTExpressionInfo.m in Sources */,
+				49A4D85C1CF7A59100F8DCED /* MTSymbol.m in Sources */,
+				49DEC8B01CF77A16000053CD /* MTReduceRule.m in Sources */,
+				49A4D85D1CF7A59100F8DCED /* MTTokenizer.m in Sources */,
+				49DEC89C1CF77A16000053CD /* MTExpressionUtil.m in Sources */,
+				49DEC8A71CF77A16000053CD /* MTDecimalReduceRule.m in Sources */,
+				49DEC8A91CF77A16000053CD /* MTDivisionIdentityRule.m in Sources */,
+				49DEC8A11CF77A16000053CD /* MTCanonicalizer.m in Sources */,
+				49DEC8B11CF77A16000053CD /* MTRemoveNegativesRule.m in Sources */,
+				49DEC8B31CF77A16000053CD /* MTRule.m in Sources */,
+				49DEC8AA1CF77A16000053CD /* MTFlattenRule.m in Sources */,
+				49DEC8AD1CF77A16000053CD /* MTNullRule.m in Sources */,
+				49DEC89E1CF77A16000053CD /* MTRational.m in Sources */,
+				49DEC8AE1CF77A16000053CD /* MTRationalAdditionRule.m in Sources */,
+				49DEC8A41CF77A16000053CD /* MTCalculateRule.m in Sources */,
+				49DEC8A21CF77A16000053CD /* MTExpressionAnalysis.m in Sources */,
+				49DEC8B41CF77A16000053CD /* MTZeroRule.m in Sources */,
+				49DEC8AF1CF77A16000053CD /* MTRationalMultiplicationRule.m in Sources */,
+				49DEC89D1CF77A16000053CD /* MTInfixParser.m in Sources */,
+				49DEC8AB1CF77A16000053CD /* MTIdentityRule.m in Sources */,
+				49DEC8B21CF77A16000053CD /* MTReorderTermsRule.m in Sources */,
+				49DEC8A81CF77A16000053CD /* MTDistributionRule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49DEC8551CF7755F000053CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4D88C1CF7A70A00F8DCED /* RationalMultiplicationRuleTest.m in Sources */,
+				49A4D88B1CF7A70A00F8DCED /* RationalAdditionRuleTest.m in Sources */,
+				49A4D8851CF7A70A00F8DCED /* DistributionRuleTest.m in Sources */,
+				49A4D8871CF7A70A00F8DCED /* FlattenRuleTest.m in Sources */,
+				49A4D88D1CF7A70A00F8DCED /* RemoveNegativesRuleTest.m in Sources */,
+				49A4D8921CF7A70A00F8DCED /* ExpressionUtilTest.m in Sources */,
+				49DEC85C1CF7755F000053CD /* MathSolverTests.m in Sources */,
+				49A4D8911CF7A70A00F8DCED /* InfixParserTest.m in Sources */,
+				49A4D8881CF7A70A00F8DCED /* IdentityRuleTest.m in Sources */,
+				49A4D88E1CF7A70A00F8DCED /* ReorderTermsRuleTest.m in Sources */,
+				49A4D8931CF7A70A00F8DCED /* ExpressionTest.m in Sources */,
+				49A4D88A1CF7A70A00F8DCED /* NullRuleTest.m in Sources */,
+				49A4D8831CF7A70A00F8DCED /* CanonicalizerTest.m in Sources */,
+				49A4D8821CF7A70A00F8DCED /* CancelCommonFactorsRuleTest.m in Sources */,
+				49A4D8861CF7A70A00F8DCED /* DivisionIdentityRuleTest.m in Sources */,
+				49A4D8841CF7A70A00F8DCED /* CollectLikeTermsRuleTest.m in Sources */,
+				49A4D88F1CF7A70A00F8DCED /* ZeroRuleTest.m in Sources */,
+				49A4D8891CF7A70A00F8DCED /* NestedDivisionRuleTest.m in Sources */,
+				49A4D8811CF7A70A00F8DCED /* CalculateRuleTest.m in Sources */,
+				49A4D8801CF7A70A00F8DCED /* TokenizerTest.m in Sources */,
+				49A4D8901CF7A70A00F8DCED /* RationalTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49DEC8501CF774E4000053CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49DEC8511CF774E4000053CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49DEC8531CF774E4000053CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06015C8F0F013669F5BE437 /* Pods-MathSolver.debug.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Log.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		49DEC8541CF774E4000053CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F414D58011471A119E8C6F4 /* Pods-MathSolver.release.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Log.pch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		49DEC8621CF7755F000053CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCAD9DE7EE9A47DF798161F /* Pods-MathSolverTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MathSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.math.MathSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49DEC8631CF7755F000053CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971DFCE3D8E41A5446B5AC27 /* Pods-MathSolverTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MathSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.math.MathSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49DEC8441CF774E4000053CD /* Build configuration list for PBXProject "MathSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49DEC8501CF774E4000053CD /* Debug */,
+				49DEC8511CF774E4000053CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49DEC8521CF774E4000053CD /* Build configuration list for PBXNativeTarget "MathSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49DEC8531CF774E4000053CD /* Debug */,
+				49DEC8541CF774E4000053CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49DEC8611CF7755F000053CD /* Build configuration list for PBXNativeTarget "MathSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49DEC8621CF7755F000053CD /* Debug */,
+				49DEC8631CF7755F000053CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49DEC8411CF774E4000053CD /* Project object */;
+}
